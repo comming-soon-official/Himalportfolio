@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { a } from "react-router-dom";
 import styled from "styled-components";
-import { Facebook, Github, Twitter, YouTube } from "../components/AllSvg";
+import { Instagram, Github, Twitter, YouTube } from "../components/AllSvg";
 import { DarkTheme } from "../components/Themes";
 
 const Icons = styled.div`
@@ -37,7 +36,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href="https://instagram.com/comming_soon_official"
+          href="https://github.com/comming-soon-official"
         >
           <Github
             width={26}
@@ -54,7 +53,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href="https://instagram.com/comming_soon_official"
+          href="https://twitter.com/comming28694616"
         >
           <Twitter
             width={26}
@@ -71,7 +70,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href="https://instagram.com/comming_soon_official"
+          href="https://www.youtube.com/channel/UClyMhc0TJZg5Et-EP356Tzw"
         >
           <YouTube
             width={26}
@@ -91,7 +90,7 @@ const SocialIcons = (props) => {
           target="_blank"
           href="https://instagram.com/comming_soon_official"
         >
-          <Facebook
+          <Instagram
             width={26}
             height={26}
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}

@@ -28,13 +28,17 @@ const Container = styled.div`
   padding: 32px;
 `;
 
-const Contact = styled(NavLink)`
+const Contact = styled.div`
   color: ${(props) => props.theme.text};
   position: absolute;
   top: 32px;
   right: calc(16px + 2vw);
   text-decoration: none;
   z-index: 1;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 const BLOG = styled(NavLink)`
   color: ${(props) => props.theme.text};
@@ -140,10 +144,7 @@ const Main = () => {
           />
           {click ? null : <span>Click Here...</span>}
         </Center>
-        <Contact
-          target="_blank"
-          to={{ pathname: "mailto:jaydenlking@gmail.com" }}
-        >
+        <Contact>
           <motion.h2
             initial={{
               y: -200,
@@ -156,7 +157,10 @@ const Main = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
-            Say hi..
+            <a target="_blank" href="mailto:jaydenlking@gmail.com">
+              {" "}
+              Say hi..
+            </a>
           </motion.h2>
         </Contact>
         <BLOG to="/blog">

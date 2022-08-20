@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Container = styled(motion.div)``;
 
-const Box = styled(motion(NavLink))`
+const Box = styled(motion.a)`
   width: calc(160px + 15vw);
   text-decoration: none;
   height: 320px;
@@ -79,7 +79,7 @@ const BlogComponent = (props) => {
   const { name, tags, date, imgSrc, link } = props.blog;
   return (
     <Container variants={Item}>
-      <Box target="_blank" to={{ pathname: link }}>
+      <Box target="_blank" href={link}>
         <Image img={imgSrc} />
         <Title>{name}</Title>
         <HashTags>

@@ -52,7 +52,7 @@ const Footer = styled.footer`
   justify-content: space-between;
 `;
 
-const Link = styled(NavLink)`
+const Link = styled.div`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
 
@@ -64,8 +64,12 @@ const Link = styled(NavLink)`
     background-color: ${(props) => props.theme.text};
     color: ${(props) => props.theme.body};
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
-const Git = styled(NavLink)`
+const Git = styled.a`
   color: inherit;
   text-decoration: none;
   margin-top: 9px;
@@ -102,10 +106,12 @@ const WorkCard = (props) => {
         })}
       </Tags>
       <Footer>
-        <Link to={{ pathname: `${demo}` }} target="_blank">
-          Visit
+        <Link>
+          <a href={demo} target="_blank">
+            Visit
+          </a>
         </Link>
-        <Git to={{ pathname: `${demo}` }} target="_blank">
+        <Git href={github} target="_blank">
           <Github width={30} height={30} fill="currentColor" />
         </Git>
       </Footer>

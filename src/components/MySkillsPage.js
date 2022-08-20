@@ -81,7 +81,7 @@ const MySkillsPage = () => {
         <ParticleComponent theme="light" />
         <Main>
           <Title>
-            <Develope width={35} height={35} fill="currentColor" /> FullStack
+            <Develope width={40} height={40} fill="currentColor" /> FullStack
             Developer
           </Title>
           <Discription>
@@ -102,13 +102,8 @@ const MySkillsPage = () => {
         </Main>
         <Main>
           <Title>
-            <Devops
-              style={{ padding: 0, marginTop: 15, marginRight: 0 }}
-              width={40}
-              height={40}
-              fill="currentColor"
-            />{" "}
-            Devops Engineer
+            <Devops width={40} height={40} fill="currentColor" /> Devops
+            Engineer
           </Title>
           <Discription>
             I love clouds to handle and implement with different ideas
